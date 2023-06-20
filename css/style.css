@@ -3,8 +3,27 @@
 /* add font awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
+html {
+  --primary-dark: #043873;
+  --primary-light: #4f9cf9;
+}
+
 /* header */
+.mainHeader {
+  background-color: var(--primary-dark);
+}
 .mainHeader .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeader .logo {
+  width: 134px;
+  display: inline-block;
+  padding: 16px 0;
+}
+.burger {
+  font-size: 28px;
+  color: white;
 }
