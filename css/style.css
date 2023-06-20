@@ -8,9 +8,24 @@ html {
   --primary-light: #4f9cf9;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 /* Common styles =================================== */
 .section {
   padding: 80px 0;
+}
+
+.btn {
+  padding: 20px 40px;
+  background-color: var(--primary-light);
+  border-radius: 8px;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  border: 1px solid var(--primary-light);
 }
 
 /* header ======================================== */
@@ -38,4 +53,24 @@ html {
 .hero {
   background-color: var(--primary-dark);
   color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.hero .lead {
+  letter-spacing: -0.02em;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.hero .btn-hero {
+  margin-bottom: 100px;
 }
