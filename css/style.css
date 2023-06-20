@@ -6,6 +6,7 @@
 html {
   --primary-dark: #043873;
   --primary-light: #4f9cf9;
+  --secondary-1: #ffe492;
 }
 
 body {
@@ -16,6 +17,11 @@ body {
 .section {
   padding: 80px 0;
 }
+.unlisted {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
 
 .btn {
   padding: 20px 40px;
@@ -24,8 +30,14 @@ body {
   display: inline-block;
   color: white;
   font-size: 18px;
+  font-weight: 500;
   line-height: 30px;
   border: 1px solid var(--primary-light);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-1);
+  color: var(--primary-dark);
 }
 
 /* header ======================================== */
@@ -46,6 +58,10 @@ body {
 .burger {
   font-size: 28px;
   color: white;
+}
+
+.nav {
+  display: none;
 }
 
 /* Hero ======================================== */
@@ -73,4 +89,36 @@ body {
 
 .hero .btn-hero {
   margin-bottom: 100px;
+}
+
+/* Media */
+
+/* 1000px */
+
+@media screen and (min-width: 1000px) {
+  .burger {
+    display: none;
+  }
+  .nav {
+    display: flex;
+  }
+  .mainMenu {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-right: 75px;
+  }
+  .navItem {
+    padding: 0.7em 1em;
+  }
+  .nav .btn {
+    padding: 16px 40px;
+    line-height: 23px;
+  }
+  .nav .btn-secondary {
+    margin-right: 24px;
+  }
+  .mainHeader {
+    padding: 16px 0;
+  }
 }
