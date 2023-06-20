@@ -8,7 +8,12 @@ html {
   --primary-light: #4f9cf9;
 }
 
-/* header */
+/* Common styles =================================== */
+.section {
+  padding: 80px 0;
+}
+
+/* header ======================================== */
 .mainHeader {
   background-color: var(--primary-dark);
 }
@@ -25,5 +30,12 @@ html {
 }
 .burger {
   font-size: 28px;
+  color: white;
+}
+
+/* Hero ======================================== */
+
+.hero {
+  background-color: var(--primary-dark);
   color: white;
 }
