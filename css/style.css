@@ -1,1 +1,10 @@
 @import 'reset.css';
+
+/* add font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* header */
+.mainHeader .container {
+  display: flex;
+  justify-content: space-between;
+}
