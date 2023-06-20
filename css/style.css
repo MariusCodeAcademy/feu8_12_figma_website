@@ -149,7 +149,7 @@ body {
   .mainHeader {
     padding: 16px 0;
   }
-  /* hero area   */
+  /* hero area ============   */
   .hero {
     text-align: left;
   }
@@ -170,5 +170,18 @@ body {
   }
   .hero .btn-hero {
     place-self: flex-start;
+  }
+  /* Projec management section  ================== */
+  .management .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .management .text-part {
+    flex-basis: 50%;
+  }
+  .management .sectionImg {
+    width: 50%;
+    display: block;
   }
 }
