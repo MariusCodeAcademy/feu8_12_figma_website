@@ -38,6 +38,7 @@ body {
 .btn-secondary {
   background-color: var(--secondary-1);
   color: var(--primary-dark);
+  border-color: var(--secondary-1);
 }
 
 /* header ======================================== */
@@ -120,5 +121,27 @@ body {
   }
   .mainHeader {
     padding: 16px 0;
+  }
+  /* hero area   */
+  .hero {
+    text-align: left;
+  }
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  .hero .hero-img {
+    grid-row: 1 / span 3;
+    grid-column-start: 2;
+  }
+  .hero h1 {
+    margin-top: 47px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+  }
+  .hero .btn-hero {
+    place-self: flex-start;
   }
 }
