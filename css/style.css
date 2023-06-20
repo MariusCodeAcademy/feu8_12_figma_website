@@ -7,6 +7,7 @@ html {
   --primary-dark: #043873;
   --primary-light: #4f9cf9;
   --secondary-1: #ffe492;
+  --secondary-4: #212529;
 }
 
 body {
@@ -39,6 +40,22 @@ body {
   background-color: var(--secondary-1);
   color: var(--primary-dark);
   border-color: var(--secondary-1);
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: var(--secondary-4);
+  margin-bottom: 24px;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--secondary-4);
+  margin-bottom: 60px;
 }
 
 /* header ======================================== */
@@ -90,6 +107,16 @@ body {
 
 .hero .btn-hero {
   margin-bottom: 100px;
+}
+
+/* Projec management section */
+
+.management {
+  text-align: center;
+}
+
+.management .text-part {
+  margin-bottom: 60px;
 }
 
 /* Media */
