@@ -37,7 +37,9 @@
    .aside \*
 
 8. '>' - tiesioginis vaikinis elementas
+
    .blue > \* - h2 ir div.in
+
    .blue > div - .blue elemento viduje esantys tiesioginiai vaikai divai
 
 ```html
