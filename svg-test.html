@@ -19,12 +19,23 @@
     .appleSvg:hover .lapelis {
       fill: black;
     }
+
+    .special {}
+
+    .special::after {
+      content: ' - I am after';
+    }
+
+    .special::before {
+      content: url('images/svg/apple-logo.svg')
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h2>Svg</h2>
+    <h2 class="special">Svg</h2>
+
     <!-- <img src="images/svg/apple-logo.svg" alt="obuolys"> -->
 
     <svg class="appleSvg" width="73" height="74" viewBox="0 0 73 74" fill="none" xmlns="http://www.w3.org/2000/svg">
