@@ -1,4 +1,4 @@
-# Steps
+# Darom
 
 1. figma failas https://www.figma.com/community/file/1156860863353724933
 2. Footer
@@ -50,3 +50,11 @@
   </div>
 </div>
 ```
+
+## Praktika
+
+1. ![](assets/2023-06-21-11-55-00.png)
+1. ![](assets/2023-06-21-11-53-56.png)
+1. ![](assets/2023-06-21-11-54-05.png)
+1. ![](assets/2023-06-21-11-54-35.png)
+1. https://www.frontendmentor.io/

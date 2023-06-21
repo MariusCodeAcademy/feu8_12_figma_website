@@ -1,4 +1,5 @@
 @import 'reset.css';
+@import 'hero.css';
 
 /* add font awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
@@ -126,7 +127,7 @@ body {
   margin-bottom: 100px;
 }
 
-/* Projec management section */
+/* Projec management section  ========= */
 
 .management {
   text-align: center;
@@ -177,7 +178,19 @@ body {
   font-size: 28px;
   line-height: 36px;
 }
+
 /* Media */
+
+@media screen and (min-width: 768px) {
+  /* common */
+  .g-md-span-2 {
+    grid-column: span 2;
+  }
+  /* footer */
+  .footerTop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /* 1000px */
 
@@ -241,5 +254,49 @@ body {
   .management .sectionImg {
     width: 50%;
     display: block;
+  }
+  /* common */
+  .g-lg-span-3 {
+    grid-column: span 3;
+  }
+  /* footer */
+  .footerBlock-1 {
+    grid-area: logo;
+  }
+  .footerBlock-2 {
+    grid-area: nav1;
+  }
+  .footerBlock-3 {
+    grid-area: nav2;
+  }
+  .footerBlock-4 {
+    grid-area: nav3;
+  }
+  .footerBlock-5 {
+    grid-area: cta;
+  }
+  .footerTop {
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-areas:
+      'logo logo cta cta'
+      'nav1 nav2 nav2 nav3';
+  }
+  .footerBlock.flex {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footerTop {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+    grid-template-areas: 'logo nav1 nav2 nav3 cta';
+  }
+}
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
   }
 }
