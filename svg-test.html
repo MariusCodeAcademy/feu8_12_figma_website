@@ -20,20 +20,40 @@
       fill: black;
     }
 
-    .special {}
+    .special {
+      padding-bottom: 25px;
+      position: relative;
+    }
 
     .special::after {
-      content: ' - I am after';
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      /* nebus content - nebus after */
+      content: '';
+      width: 80px;
+      height: 3px;
+      background-color: tomato;
+      display: inline-block;
     }
 
     .special::before {
-      content: url('images/svg/apple-logo.svg')
+      /* content: url('images/svg/apple-logo.svg') */
+    }
+
+    h1::after {
+      content: '\f2c1';
+      font-family: 'fontAwesome';
+      color: tomato;
+      font-size: 50px;
+      padding-left: 30px;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
+    <h1>after add icon </h1>
     <h2 class="special">Svg</h2>
 
     <!-- <img src="images/svg/apple-logo.svg" alt="obuolys"> -->
