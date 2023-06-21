@@ -31,15 +31,26 @@ body {
   display: inline-block;
   color: white;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 30px;
   border: 1px solid var(--primary-light);
+}
+
+.btn::after {
+  content: '\f178';
+  font-family: FontAwesome;
+  font-size: 18px;
+  padding-left: 8px;
 }
 
 .btn-secondary {
   background-color: var(--secondary-1);
   color: var(--primary-dark);
   border-color: var(--secondary-1);
+}
+.btn-secondary::after {
+  /* nuimama rodykle */
+  content: none;
 }
 
 .sectionTitle {
